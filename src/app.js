@@ -6,7 +6,7 @@ const app = express();
 const publicDir = path.join(__dirname, "../public");
 const templateDir = path.join(__dirname, "../template/views");
 const includesDir = path.join(__dirname, "../template/includes");
-const PORT_URL = process.env.POST || 3000;
+const PORT_URL = process.env.PORT || 3000;
 
 app.set("view engine", "hbs");
 app.set("views", templateDir);
